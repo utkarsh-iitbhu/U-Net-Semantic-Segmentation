@@ -1,6 +1,9 @@
 # U-Net-Semantic-Segmentation
 
-## **1. Load our data**
+## **1. Get our data**
+
+Download data from: [Here](https://www.kaggle.com/code/oluwatobiojekanmi/carla-image-semantic-segmentation-with-u-net/data)
+
 
 
 ## **2. Data Preproccesing**
