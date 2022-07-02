@@ -72,14 +72,12 @@ Model Evaluation is an integral part of the model development process. It helps 
 
 Since the goal of our model is to partition an input image into various classes, it is often difficult to know if our model struggles to optimally partition one or more classes since it doesn't always reflect in the model accuracy, neither can it easily detected by the eyes. Hence, there is a need for supplementary metrics to evaluate model performance.
 
-In this project, we will be using recall,precision, specificity, true detection rate (TDR), Intersection over Union (IoU), and F1-score as supplementary metrics to evaluate our model performance. These metrics were computed by identifying the variables true positive (TP), true negative (TN), false positive (FP), and false-negative (FN) by calculating the confusion matrix between the predicted segmentations and the ground truth segmentations. The expressions for these metrics are defined as:
+We will be using recall,precision, Intersection over Union (IoU), and F1-score as supplementary metrics to evaluate our model performance. These metrics were computed by identifying the variables true positive (TP), true negative (TN), false positive (FP), and false-negative (FN) by calculating the confusion matrix between the predicted segmentations and the ground truth segmentations. The expressions for these metrics are defined as:
 
 1. Precision = TP/(TP + FP)
 2. Recall/Sensitivity = TP/(TP + FN)
-3. Specificity = TN/(TN + FP)
-4. True Detection Rate (TDR) = 1 - (FN/(TP + FN))
-5. Intersection over Union (IoU)/Jaccard Similarity  = TP/(TP + FP + FN)
-6. F1-score(JS)/Dice coefficient = 2 * ((Precision * Recall)/(Precision + Recall))
+3. Intersection over Union (IoU)/Jaccard Similarity  = TP/(TP + FP + FN)
+4. F1-score(JS)/Dice coefficient = 2 * ((Precision * Recall)/(Precision + Recall))
 
 <br/>
 
@@ -99,3 +97,7 @@ Hence, we will
 3. Predict and compare masks of images in the validation set
 4. Predict and compare masks of images in the test set
 
+## **6. Segmented image**
+![image](https://user-images.githubusercontent.com/84759422/177004225-256b1ae9-b31e-47e5-bd8d-6ca5216d70cf.png)
+
+#### Predicted mask shows the segmented image that our model has predicted, we can compare our results with True mask
